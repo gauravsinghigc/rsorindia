@@ -1,0 +1,975 @@
+:root {
+    --primary-red-color: rgb(238, 3, 3);
+}
+
+img {
+    border-radius: 1rem !important;
+}
+
+p {
+    line-height: normal !important;
+}
+
+.btn {
+    border-radius: 0.5rem !important;
+}
+
+.rsor-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.rsor-brand {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+.rsor-brand img {
+    width: auto;
+    min-width: 3rem;
+    max-width: 3rem;
+}
+
+.rsor-brand .rsor-name {
+    line-height: 1rem !important;
+    padding-top: 0.4rem;
+    padding-left: 0.5rem;
+}
+
+.rsor-brand .rsor-name h1 {
+    margin-bottom: 0px !important;
+    font-size: 1.35rem;
+    padding-bottom: 0px !important;
+}
+
+.rsor-brand .rsor-name p {
+    margin-top: -0.5rem !important;
+    margin-bottom: 0px !important;
+    font-size: 0.75rem !important;
+}
+
+.Rblink {
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+
+.rsor-web-loader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0px;
+    right: 0px;
+    background-color: #ffffff;
+    z-index: 9999999;
+}
+
+.rsor-loader-content {
+    margin: 10% auto;
+}
+
+.rsor-text {
+    color: var(--primary-red-color);
+}
+
+.rsor-initial-handler {
+    display: flex;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    justify-content: flex-end;
+}
+
+.rsor-locations,
+.rsor-accounts {
+    margin: 0.2rem;
+    padding: 0.2rem 0.8rem;
+    box-shadow: 0px 0px 2px var(--primary-red-color);
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    background-color: #ffffffa3;
+}
+
+.rsor-locations:hover,
+.rsor-accounts:hover {
+    box-shadow: 0px 0px 5px var(--primary-red-color);
+}
+
+.rsor-locations a,
+.rsor-accounts a {
+    display: flex;
+}
+
+.rsor-accounts span,
+.rsor-locations span {
+    margin-left: 0.25rem;
+    font-size: 0.7rem !important;
+    font-weight: 800 !important;
+}
+
+.rsor-locations span.location-marker i,
+.rsor-accounts span.account-icon i {
+    color: var(--primary-red-color);
+    font-size: 1.5rem;
+    margin-right: 0.25rem;
+}
+
+.rsor-heading {
+    padding-top: 4rem;
+    font-size: 2.7rem !important;
+}
+
+.rsor-services {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+.rsor-services .boxes {
+    flex: 1 1 15%;
+    min-width: 150px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px grey;
+    text-align: left;
+    padding: 20px;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.63);
+    padding-top: 3.5rem !important;
+    border-bottom-style: groove;
+    border-color: var(--primary-red-color);
+    border-width: 1rem;
+}
+
+.rsor-services .boxes h5 {
+    margin-top: 2rem;
+    animation: expand 2s infinite;
+    text-align: center;
+}
+
+@keyframes expand {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(5deg);
+        /* Start and end position */
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(10deg);
+        /* Bounce height */
+    }
+}
+
+.rsor-services .boxes img {
+    animation: bounce 2s infinite;
+    transform: rotate(-5deg);
+}
+
+.rsor-services .boxes:hover {
+    box-shadow: 0px 0px 15px var(--primary-red-color);
+    border-top-right-radius: 2rem !important;
+    border-top-left-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+}
+
+.rsor-services .boxes:hover img {
+    animation: none;
+    transform: rotate(0deg);
+}
+
+.rsor-services .boxes:hover h5 {
+    animation: none;
+    transform: translateY(0);
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(-10deg);
+        /* Start and end position */
+    }
+
+    50% {
+        transform: translateY(-20px) rotate(-10deg);
+        /* Bounce height */
+    }
+}
+
+.rsor-intro-bg {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    background-size: cover;
+    min-height: 45rem;
+    min-width: 100%;
+}
+
+.rsr-intro-list {
+    margin-top: 1.5rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.rsr-intro-list li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0.7rem;
+    flex-direction: column;
+}
+
+.rsr-intro-list li span.icon {
+    padding: 0.5rem 0.9rem;
+    font-size: 1rem;
+    text-align: center;
+    background-color: var(--primary-red-color);
+    border-radius: 0.5rem;
+    color: white;
+    width: min-content;
+}
+
+.rsr-intro-list li span.text {
+    padding-left: 0rem;
+}
+
+.rsr-intro-list li span p {
+    text-align: justify !important;
+}
+
+.rsor-card {
+    margin-bottom: 1.5rem;
+}
+
+.rsor-card a {
+    display: block;
+    box-shadow: 0px 0px 2px grey;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.rsor-card a:hover {
+    box-shadow: 0px 0px 5px var(--primary-red-color);
+}
+
+.rsor-card a h6 {
+    margin-top: 0.35rem;
+    font-size: 0.95rem;
+}
+
+.rsor-card a p {
+    line-height: initial;
+    font-size: 0.9rem;
+    margin-bottom: 0.1rem;
+}
+
+.rsor-card a p.time {
+    font-size: 0.65rem !important;
+    color: grey;
+}
+
+.rsor-card a p.points {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+}
+
+.rsor-card a p.points span {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rsor-card a p.points span.prop {
+    font-size: 0.6rem;
+    color: grey;
+}
+
+.rsor-card a p.points span.desc {
+    font-size: 0.65rem;
+    font-weight: 600;
+}
+
+.rsor-card a p.tags {
+    margin-top: 0.3rem;
+}
+
+.rsor-card a p.tags span {
+    display: inline;
+    font-size: 0.55rem;
+    color: grey;
+    background-color: antiquewhite;
+    padding: 0.2rem 0.45rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.rsor-card a .btn {
+    border-radius: 2rem !important;
+}
+
+.rsor-vendor-card-logo {
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem;
+    width: 5rem;
+    z-index: 1;
+    left: 2rem;
+    top: 6rem;
+    box-shadow: 0px 0px 2px grey;
+    height: 5rem;
+}
+
+.rsor-highlight-content {
+    padding: 2rem 1rem;
+    background-color: var(--primary-red-color);
+    border-radius: 1rem;
+    color: white;
+}
+
+.rsor-highlight-content * {
+    color: white;
+}
+
+.rsor-highlight-content .text-black,
+.text-black {
+    color: black !important;
+}
+
+.rsor-highlights-img {
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    background-size: cover;
+    min-height: 15rem;
+}
+
+.br1 {
+    border-radius: 1rem;
+}
+
+.rsor-social-links {
+    margin-top: 0.5rem;
+    display: flex;
+}
+
+.rsor-social-links a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    box-shadow: 0px 0px 1px red;
+    margin-bottom: 0px;
+    margin: 0.2rem;
+    border-radius: 5rem;
+    padding: 0.3rem;
+}
+
+.rsor-social-links a:hover {
+    background-color: var(--primary-red-color);
+    transform: scale(1.5);
+}
+
+.rsor-social-links a:hover i {
+    color: white !important;
+}
+
+.rsor-social-links a i {
+    margin-bottom: 0px;
+}
+
+.rsor-social-links i.fa-facebook {
+    color: #3b5998;
+}
+
+.rsor-social-links a i.fa-twitter {
+    color: #1da1f2;
+}
+
+.rsor-social-links a i.fa-instagram {
+    color: #c13584;
+}
+
+.rsor-social-links a i.fa-linkedin {
+    color: #007bb5;
+}
+
+.rsor-social-links a i.fa-youtube {
+    color: #ff0000;
+}
+
+.rsor-social-links a i.fa-pinterest {
+    color: #bd081c;
+}
+
+.rsor-social-links a i.fa-medium {
+    color: #000;
+}
+
+.rsor-social-links a i.fa-map-marker {
+    color: #02aa3a;
+}
+
+footer {
+    border-top-style: groove;
+    border-color: var(--primary-red-color);
+    border-width: 0.5rem;
+}
+
+footer hr {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+.rsor-footer-links li a,
+.rsor-page-menu li a {
+    display: block;
+    padding: 0.2rem 0.8rem;
+    margin-bottom: 0.15rem;
+    border-radius: 1rem;
+}
+
+.rsor-footer-links li a:hover,
+.rsor-page-menu li a:hover,
+.rsor-footer-links li a.active,
+.rsor-page-menu li a.active {
+    background-color: var(--primary-red-color);
+    color: white;
+}
+
+.rsor-footer-links li a:hover i,
+.rsor-page-menu li a:hover i {
+    transform: scale(1.2);
+    color: white;
+}
+
+.rsor-footer-links li a i,
+.rsor-page-menu li a i {
+    color: var(--primary-red-color);
+    width: 1.2rem;
+    text-align: center;
+}
+
+.rsor-page-menu li a.active i {
+    color: white !important;
+}
+
+.highlightimg {
+    display: block;
+    height: 100%;
+    min-height: 20rem;
+}
+
+.btn-danger,
+.bg-danger {
+    background-color: var(--primary-red-color) !important;
+}
+
+.rsor-mini-menus {
+    display: flex;
+    margin-top: -0.5rem;
+}
+
+.rsor-mini-menus li {
+    margin-right: 1rem;
+    list-style-type: none;
+}
+
+.rsor-mini-menus li a {
+    font-size: 0.75rem;
+    background-color: white;
+    padding: 0.25rem 0.7rem;
+    border-radius: 2rem;
+}
+
+.rsor-mini-menus li a:hover,
+.rsor-mini-menus li a.active {
+    color: white;
+    background-color: var(--primary-red-color);
+}
+
+.font-cursive {
+    font-family: cursive !important;
+}
+
+.flex-s-b {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.reviews {
+    box-shadow: -5px -2px 0px 0px var(--primary-red-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    margin-left: 0px;
+    border-top-right-radius: 9rem;
+    padding-bottom: 1.5rem;
+    display: block;
+    height: 90%;
+    margin-bottom: 1.5rem;
+}
+
+.reviews:hover {
+    box-shadow: 5px 0px 10px var(--primary-red-color);
+    border-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.reviews .name {
+    background-color: var(--primary-red-color);
+    color: white;
+    padding: 0.25rem 1.5rem;
+    width: max-content;
+    position: absolute;
+    margin-left: -2rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border-bottom-right-radius: 0px;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.reviews .icon {
+    position: absolute;
+    width: 6rem;
+    background-color: white;
+    border-radius: 10rem !important;
+    padding: 0.25rem;
+    right: 2rem;
+    margin-top: 0rem;
+    box-shadow: 0px 0px 1px grey;
+}
+
+.reviews .rating {
+    display: block;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.reviews .rating span i {
+    font-size: 1.2rem;
+    margin-right: 0.2rem;
+}
+
+.reviews .feedback {
+    text-align: justify;
+    font-size: 0.9rem;
+    line-height: normal;
+    margin-top: 0.5rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    /* Limits to 4 lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Adjust line height to control spacing */
+    max-height: calc(1.5em * 5);
+    /* Limits the visible area to 4 lines */
+}
+
+.reviews .tags {
+    display: ruby;
+}
+
+.reviews .tags li {
+    font-size: 0.7rem;
+    background-color: antiquewhite;
+    padding: 0.15rem 0.5rem;
+    margin: 0.2rem;
+    border-radius: 3rem;
+}
+
+.reviews .review-date {
+    display: block;
+    font-size: 0.85rem;
+    color: darkgray;
+    font-style: italic;
+}
+
+.reviews .divider {
+    display: block;
+    width: 1.5rem;
+    height: 3rem;
+    background-color: #ee0303;
+    position: absolute;
+    top: 2rem;
+    left: -1rem;
+    border-bottom-left-radius: 12rem;
+    border-top-left-radius: 6rem;
+    transform: rotate(0deg);
+}
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.rsor-ratings {
+    padding-top: 3rem;
+    margin-left: 1rem;
+}
+
+.rsor-ratings span i {
+    font-size: 2.5rem;
+}
+
+.rsor-awards {
+    margin-bottom: 1rem;
+}
+
+.rsor-awards div {
+    box-shadow: 0px 0px 1px lightcoral;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    display: block;
+    height: 100%;
+}
+
+.rsor-awards img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.rsor-awards h2 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.rsor-awards p {
+    font-size: 0.85rem;
+    font-style: italic;
+}
+
+.rsor-media,
+.rsor-partners {
+    border-bottom-style: groove;
+    border-width: thin;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.rsor-media .img-block,
+.rsor-partners .img-block {
+    padding-top: 0.5rem;
+}
+
+.rsor-media .text-block p,
+.rsor-partners .text-block p {
+    line-height: normal;
+}
+
+.rsor-work-env {
+    border-left-style: dashed;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    border-color: #ee0303;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.rsor-work-env li {
+    margin-bottom: 2rem;
+    border-bottom-style: groove;
+    border-width: thin;
+    padding-bottom: 1rem;
+}
+
+.rsor-work-env .date {
+    display: flex;
+    position: absolute;
+    background-color: #ee0303;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-bottom-right-radius: 20rem;
+    border-top-right-radius: 20rem;
+    flex-direction: row;
+    width: max-content;
+    text-align: center;
+    left: 1.9rem;
+}
+
+.rsor-work-env .date .day {
+    font-size: 1.5rem;
+    padding: 0.25rem;
+    font-weight: 800;
+}
+
+.rsor-work-env .date .year {
+    padding: 0.25rem;
+    font-size: 0.9rem;
+}
+
+.rsor-work-env .desc {
+    padding-top: 3.5rem;
+}
+
+.rsor-work-env .desc .title {
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+}
+
+.rsor-work-env .desc p {
+    line-height: normal;
+}
+
+.rsor-work-env .desc .images {
+    margin-top: 1rem;
+    margin-left: 0rem;
+}
+
+.gallery-images {
+    margin-top: 1rem;
+    margin-left: 0rem;
+}
+
+.gallery-images img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0.1rem;
+    object-fit: cover;
+}
+
+.gallery-images img:hover {
+    transform: scale(2);
+}
+
+.rsor-work-env .desc .images img {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.1rem;
+    object-fit: cover;
+}
+
+.rsor-work-env .desc .images img:hover {
+    transform: scale(2);
+}
+
+.rsor-work-env .initial {
+    border-style: none !important;
+    padding-bottom: 0px !important;
+    display: block;
+}
+
+.rsor-work-env .initial .icon {
+    display: block;
+    position: absolute;
+    background-color: #ee0303;
+    padding: 1rem 1.2rem;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    left: 0.2rem;
+}
+
+.rsor-work-env .mt--1,
+.mt--1 {
+    margin-top: -2rem !important;
+}
+
+.rsor-privacy p {
+    margin-bottom: 0.5rem !important;
+    text-align: justify;
+}
+
+.display-5 {
+    font-weight: 300 !important;
+    font-size: 2rem !important;
+}
+
+.rsor-auth {
+    background-color: white;
+    display: block;
+    height: 100% !important;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.rsor-auth-logo {
+    position: absolute;
+    left: 3rem;
+    width: 28%;
+    top: 2rem;
+}
+
+.rsor-auth-bg {
+    height: 100% !important;
+}
+
+.rounded-0 {
+    border-radius: 0.5rem !important;
+}
+
+
+.rsor-auth h1 {
+    font-size: 2.5rem !important;
+}
+
+.rsor-auth label {
+    font-size: 1.1rem !important;
+    width: 30%;
+    padding: 0.72rem 0px;
+    margin-bottom: 0px !important;
+}
+
+.rsor-auth .form-control {
+    font-size: 1.1rem !important;
+}
+
+.rsor-auth select {
+    height: 100% !important;
+}
+
+.rsor-auth #PassControl {
+    position: absolute;
+    right: 4rem;
+    font-size: 1.5rem;
+    margin-top: 0.55rem;
+    color: grey;
+}
+
+.position-bottom {
+    position: absolute !important;
+    bottom: 1rem !important;
+    display: block !important;
+    width: 100% !important;
+    left: 0px !important;
+}
+
+.hidden {
+    display: none;
+}
+
+.verify-code {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    font-weight: 700 !important;
+}
+
+.rsor-block {
+    position: relative;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 2px 1px grey;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.rsor-block::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 35%);
+    border-radius: inherit;
+}
+
+.rsor-block .contents {
+    z-index: 1;
+    display: block;
+    position: relative;
+    color: white !important;
+}
+
+.rsor-block .contents * {
+    color: white !important;
+}
+
+.rsor-lists {
+    margin-top: 1rem;
+}
+
+.rsor-lists li {
+    margin-bottom: 1rem;
+}
+
+.rsor-lists li a {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    box-shadow: 0px 0px 1px grey;
+    border-radius: 0.5rem;
+}
+
+.rsor-lists li a:hover {
+    box-shadow: 0px 0px 5px var(--primary-red-color);
+}
+
+.d-block {
+    display: block !important;
+    height: 100% !important;
+}
+
+.rsor-drag-menus {
+    display: -webkit-box;
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 0.25rem;
+    padding-top: 0.25rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
+.rsor-drag-menus li {
+    margin-right: 0.25rem;
+    text-align: center;
+}
+
+.rsor-drag-menus li a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: max-content;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0px 1px grey;
+    width: 7rem;
+    padding: 0.5rem;
+}
+
+.rsor-drag-menus li a i {
+    margin: 1% auto;
+    font-size: 1.3rem;
+}
+
+.rsor-drag-menus li a span {
+    font-size: 0.8rem;
+    margin-top: -0.2rem;
+}
+
+.rsor-drag-menus li a.active i {
+    color: white;
+}
+
+.mt--2 {
+    margin-top: -0.5rem !important;
+}
+
+.btn-sm {
+    padding: 0.25rem 0.55rem !important;
+}
